@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хроники ИИ - Новости, Обзоры Моделей и Промпты 🤖</title>
+    <meta name="description" content="📰 Хроники ИИ - витрина статей о развитии искусственного интеллекта. Ежедневные новости ИИ, обзоры моделей, коллекция промптов.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <span>AI</span> CHRONICLES
+            </a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="menu">
+                <a href="index.html" aria-current="page">Главная</a>
+                <a href="news.html">📰 Новости</a>
+                <a href="models.html">🤖 Модели</a>
+                <a href="prompts.html">💬 Промпты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">🤖 ХРОНИКИ ИСКУССТВЕННОГО ИНТЕЛЛЕКТА</div>
+                <h1>Хроники <span class="hero-highlight">ИИ</span></h1>
+                <p>Новости развития ИИ • Обзоры моделей • Коллекция промптов</p>
+                <div class="hero-buttons">
+                    <a href="#articles" class="btn-primary">📚 Читать статьи</a>
+                    <a href="#categories" class="btn-secondary">🗂️ Категории</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section" id="categories">
+            <div class="categories-container">
+                <div class="categories-nav">
+                    <button class="category-btn active" data-category="all">
+                        <span>📦</span> Все статьи
+                    </button>
+                    <button class="category-btn" data-category="news">
+                        <span>📰</span> Новости ИИ
+                    </button>
+                    <button class="category-btn" data-category="models">
+                        <span>🤖</span> Обзоры моделей
+                    </button>
+                    <button class="category-btn" data-category="prompts">
+                        <span>💬</span> Промпты
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters-section">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="new">Новые</button>
+                    <button class="filter-btn" data-filter="popular">Популярные</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск..." id="searchInput">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section" id="articles">
+            <div class="section-header">
+                <h2>Каталог статей</h2>
+                <p>Актуальные материалы о мире искусственного интеллекта</p>
+            </div>
+            <div id="articles-catalog" class="blog-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Категории</h4>
+                <ul>
+                    <li><a href="news.html">📰 Новости ИИ</a></li>
+                    <li><a href="models.html">🤖 Обзоры моделей</a></li>
+                    <li><a href="prompts.html">💬 Промпты</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>О проекте</h4>
+                <ul>
+                    <li><a href="#">О Хрониках ИИ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Хроники ИИ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/articles-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости ИИ - Ежедневные обновления развития ИИ 📰</title>
+    <meta name="description" content="📰 Ежедневные новости развития искусственного интеллекта. Актуальные события, прорывы, обновления моделей ИИ.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <span>AI</span> CHRONICLES
+            </a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a href="news.html" aria-current="page">📰 Новости</a>
+                <a href="models.html">🤖 Модели</a>
+                <a href="prompts.html">💬 Промпты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">📰 НОВОСТИ ИИ</div>
+                <h1>Ежедневные Новости <span class="hero-highlight">ИИ</span></h1>
+                <p>Актуальные события и прорывы в мире искусственного интеллекта</p>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="section-header">
+                <h2>Новости развития ИИ</h2>
+                <p>Свежие материалы о событиях в сфере искусственного интеллекта</p>
+            </div>
+            <div id="news-catalog" class="blog-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Категории</h4>
+                <ul>
+                    <li><a href="news.html">📰 Новости ИИ</a></li>
+                    <li><a href="models.html">🤖 Обзоры моделей</a></li>
+                    <li><a href="prompts.html">💬 Промпты</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>О проекте</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Хроники ИИ. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/articles-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const catalog = document.getElementById('news-catalog');
+            const newsArticles = getArticlesByCategory('news');
+            newsArticles.forEach(article => {
+                catalog.innerHTML += generateArticleCard(article);
+            });
+        });
+    </script>
+</body>
+</html>
